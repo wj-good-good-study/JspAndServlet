@@ -19,6 +19,6 @@ public class getwaterfull extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out=response.getWriter();
-        out.print("<h1>111</h1>");
+        out.print("<h1>1111111</h1>");
     }
 }
