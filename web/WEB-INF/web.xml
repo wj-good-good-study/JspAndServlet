@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>myServlet.Gossip.Login</servlet-class>
+        <init-param>
+            <param-name>SUCCESS</param-name>
+            <param-value>member</param-value>
+        </init-param>
+        <init-param>
+            <param-name>ERROR</param-name>
+            <param-value>/JspAndServlet/Gossip/index.html</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <filter>
+        <filter-name>Timelt2</filter-name>
+        <filter-class>myServlet.Filter.Timelt2</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Timelt2</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>Timelt</filter-name>
+        <filter-class>myServlet.Filter.Timelt</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Timelt</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+</web-app>

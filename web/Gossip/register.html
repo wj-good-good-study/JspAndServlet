@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册会员</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        .login{
+            width: 527px;
+            height: 380px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        .login-title {
+            position: relative;
+            width: 100%;
+            margin: 10px 0 0 0;
+            text-align: center;
+            line-height: 40px;
+            height: 40px;
+            font-size: 18px;
+            cursor: move;
+        }
+
+        .login-input-content {
+            margin-top: 20px;
+        }
+
+        .username {
+            float: left;
+            line-height: 35px;
+            height: 35px;
+            width: 350px;
+            border: #ebebeb 1px solid;
+            text-indent: 5px;
+        }
+
+        .password {
+            float: left;
+            line-height: 35px;
+            height: 35px;
+            width: 350px;
+            border: #ebebeb 1px solid;
+            text-indent: 5px;
+        }
+
+        .login-input {
+            overflow: hidden;
+            margin: 0px 0px 20px 0px;
+        }
+
+        .login-input label {
+            float: left;
+            width: 90px;
+            padding-right: 10px;
+            text-align: right;
+            line-height: 35px;
+            height: 35px;
+            font-size: 14px;
+        }
+
+        .login-title span {
+            position: absolute;
+            font-size: 12px;
+            right: 0;
+            top: -30px;
+            background: #fff;
+            border: #ebebeb solid 1px;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        .login-bottom{
+            width: 50%;
+            height: 40%;
+            margin: 0 auto;
+        }
+        .login-button {
+            width: 100%;
+            line-height: 40px;
+            font-size: 14px;
+            border: #ebebeb 1px solid;
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+<div class="login">
+    <form method='post' action='/JspAndServlet/Register'>
+        <div id="title" class="login-title">注册会员</div>
+        <div class="login-input-content">
+            <div class="login-input">
+                <label>邮箱:</label>
+                <input type="text" placeholder="请输入邮箱地址" name="email" id="email" class="username">
+            </div>
+            <div class="login-input">
+                <label>用户名:</label>
+                <input type="text" placeholder="请输入用户名" name="username" id="username" class="username">
+            </div>
+            <div class="login-input">
+                <label>密码:</label>
+                <input type="password" placeholder="请输入密码" name="password1" id="password1" class="password">
+            </div>
+            <div class="login-input">
+                <label>确认密码:</label>
+                <input type="password" placeholder="请确认密码" name="password2" id="password2" class="password">
+            </div>
+        </div>
+        <div class="login-bottom"><input type='submit' value='注册' class="login-button"></div>
+    </form>
+</div>
+
+<script>
+    function add(bookid,bookname,price){
+        table.put(host,new books(bookid,bookname,price));
+        int number=table.size();
+        alert(number);
+    }
+</script>
+</body>
+
+</html>
